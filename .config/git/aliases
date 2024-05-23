@@ -1,0 +1,25 @@
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit 
+    lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n 1
+    st = status
+    cm = commit -m
+    diffc = diff --cached
+    sshow = "!f() { git stash show stash^{/$*} -p; }; f"
+    sapply = "!f() { git stash apply stash^{/$*}; }; f"
+    bclean    = "!f() { for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done; }; f"
+    #bcleanall = "!f() { for branch in $(git branch | egrep -v '(^\*|main|master)' | awk '{print $1}'); do git branch -d $branch; done; }; f"
+    b = branch
+    root = !pwd
+    push-origin = push origin
+    po = push origin
+    diffw = diff --word-diff
+    pupu = "!f() { git pull; git push; }; f"
+    ba = branch -a
+    rm-untracked=!rm -R $(git ls-files -o --exclude-standard)
+    purr = pull --rebase
+    rhh = reset HEAD --hard
+    last = log -1 HEAD
+    ca = commit --amend
+    main = "!f() { git checkout main || git checkout master; }; f"
+    cbn = rev-parse --abbrev-ref HEAD
+  

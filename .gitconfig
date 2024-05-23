@@ -1,0 +1,46 @@
+[user]
+	name = Sey Vaneerdewegh
+
+[color]
+	ui = true
+
+[push]
+	default = simple
+
+[core]
+	editor = vim
+	filemode = false
+	autocrlf = input
+
+[pull]
+	rebase = true
+
+[rerere]
+	enabled = true
+
+[column]
+	ui = never
+
+[branch]
+	sort = -committerdate
+
+[advice]
+	skippedCherryPicks = false
+
+[commit]
+	template = ~/.config/commitmessage
+
+[include]
+	path = ~/.config/git/aliases
+	path = ~/.config/git/filters
+
+[includeIf "gitdir:~/Projects/"]
+	path = ~/Projects/.gitconfig
+
+[includeIf "gitdir:~/Projects/Trendminer/"]
+	path = ~/Projects/Trendminer/.gitconfig
+	path = ~/Projects/Trendminer/.goprivate
+
+[includeIf "gitdir:~/Projects/Personal/"]
+	path = ~/Projects/Personal/.gitconfig
+

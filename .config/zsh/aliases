@@ -1,0 +1,42 @@
+# Reload the shell
+alias reload="source ~/.zshrc"
+
+# List all PATH entries
+alias path='echo -e ${PATH//:/\\n}'
+
+# Get current month number
+alias month='date +%m'
+
+# More memorable Git branch cleanup
+alias git-clean-remote-branches="gfa"
+alias git-clean-local-branches="gbda"
+
+# Output current branch lines added/removed
+alias git-lines="git diff --shortstat main...HEAD"
+alias branch-size="git-lines"
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Update Zsh plugins and mise runtimes
+alias update-shell="antidote update; mise upgrade; mise prune"
+
+# Update Homebrew packages
+alias update-brew='brew update; brew upgrade; brew cleanup'
+
+# Update most packages
+alias update='update-brew; update-node; update-shell'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Editor
+alias vim="nvim"
+alias ls="ls --color"
