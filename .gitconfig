@@ -28,7 +28,7 @@
 	skippedCherryPicks = false
 
 [commit]
-	template = ~/.config/commitmessage
+	template = ~/.config/git/commitmessage
 
 [include]
 	path = ~/.config/git/aliases
@@ -44,3 +44,5 @@
 [includeIf "gitdir:~/Projects/Personal/"]
 	path = ~/Projects/Personal/.gitconfig
 
+[url "https://gen-trendminer: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@github.softwareag.com"]
+	insteadOf = https://github.softwareag.com
