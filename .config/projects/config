@@ -1,0 +1,2 @@
+[[ -f $HOME/Projects/Trendminer/.zshrc ]] && source "$HOME/Projects/Trendminer/.zshrc"
+[[ -f $HOME/Projects/Trendminer/.env ]] && source "$HOME/Projects/Trendminer/.env"

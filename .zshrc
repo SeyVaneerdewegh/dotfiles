@@ -18,9 +18,10 @@ source "$HOMEBREW_PREFIX/opt/antidote/share/antidote/antidote.zsh"
 # Load Zsh plugins with Antidote
 antidote load
 
-# Source additional files last to override any plugins
+# Source additional files
 [[ -f $HOME/.config/zsh/aliases ]] && source "$HOME/.config/zsh/aliases"
 [[ -f $HOME/.config/zsh/env ]] && source "$HOME/.config/zsh/env"
+[[ -f $HOME/.config/projects/config ]] && source "$HOME/.config/projects/config"
 
 # Activate plugins
 eval "$(thefuck --alias)"
