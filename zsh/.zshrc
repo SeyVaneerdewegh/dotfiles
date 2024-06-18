@@ -28,7 +28,3 @@ eval "$(thefuck --alias)"
 eval "$(jira --completion-script-bash)"
 eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
-
-# Created by `pipx` on 2024-05-30 12:28:08
-export PATH="$PATH:/Users/seva/.local/bin"
-if [ -f "/Users/seva/.config/fabric/fabric-bootstrap.inc" ]; then . "/Users/seva/.config/fabric/fabric-bootstrap.inc"; fi

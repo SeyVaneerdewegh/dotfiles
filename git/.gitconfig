@@ -8,7 +8,7 @@
 	default = simple
 
 [core]
-	editor = nvim
+	editor = vim
 	filemode = false
 	autocrlf = input
 
@@ -43,6 +43,3 @@
 
 [includeIf "gitdir:~/Projects/Personal/"]
 	path = ~/Projects/Personal/.gitconfig
-
-[url "https://gen-trendminer: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@github.softwareag.com"]
-	insteadOf = https://github.softwareag.com
