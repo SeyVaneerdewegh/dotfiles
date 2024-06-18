@@ -8,7 +8,7 @@
 	default = simple
 
 [core]
-	editor = vim
+	editor = nvim
 	filemode = false
 	autocrlf = input
 
