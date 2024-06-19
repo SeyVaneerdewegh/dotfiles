@@ -8,6 +8,8 @@ brew install stow
 
 ## Using
 
+E.g.
+
 ```shell
-stow -t ~/ .
+stow -t ~ git
 ```
