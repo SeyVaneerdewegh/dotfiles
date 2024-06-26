@@ -1,5 +1,6 @@
 /.gitignore
 /.stow-local-ignore
-/.idea/
-/.git/
+.idea
+.git
 ^/README.*
+
