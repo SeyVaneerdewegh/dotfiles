@@ -2,8 +2,8 @@
 ## Options
 setopt autocd 		# Turns on easy-folder navigatgion: if commmand is folder, make it current folder.
 # setopt extendedglob 	# Turns on more globbing options, see https://zsh.sourceforge.io/Intro/intro_2.html.
-setopt correct		# Turns on spelling correction for commands.
-setopt correctall	# Turns on spelling correction for all arguments.
+# setopt correct		# Turns on spelling correction for commands.
+# setopt correctall	# Turns on spelling correction for all arguments.
 ## History
 HIST_STAMPS="dd.mm.yyyy"
 HISTSIZE=5000
