@@ -35,10 +35,16 @@ program = "/bin/zsh"
 
 [window]
 # decorations = "full"
-decorations = "Buttonless"
+decorations = "Transparent"
 dynamic_title = true
 startup_mode = "Maximized"
 padding.x = 10
 padding.y = 10
 dimensions.columns = 160
 dimensions.lines = 80
+
+[keyboard]
+bindings = [
+    { key = "Right", mods = "Alt", chars = "\u001BF" },
+    { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
