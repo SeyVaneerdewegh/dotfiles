@@ -1,0 +1,44 @@
+import = [
+    "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+
+[cursor]
+blink_interval = 500
+blink_timeout = 5
+unfocused_hollow = false
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+normal.family = "JetBrainsMono Nerd Font"
+glyph_offset.x = 0
+glyph_offset.y = 0
+
+[mouse]
+hide_when_typing = true
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Middle"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+# decorations = "full"
+decorations = "Buttonless"
+dynamic_title = true
+startup_mode = "Maximized"
+padding.x = 10
+padding.y = 10
+dimensions.columns = 160
+dimensions.lines = 80
