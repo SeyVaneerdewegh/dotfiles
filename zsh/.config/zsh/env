@@ -7,5 +7,4 @@ export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
 # Go config
 if type "go" > /dev/null; then
   export PATH=$PATH:$(go env GOPATH)/bin
-  export GOPRIVATE=github.softwareag.com
 fi
