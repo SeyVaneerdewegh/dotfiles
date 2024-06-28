@@ -39,7 +39,7 @@ decorations = "Transparent"
 dynamic_title = true
 startup_mode = "Maximized"
 padding.x = 10
-padding.y = 10
+padding.y = 25
 dimensions.columns = 160
 dimensions.lines = 80
 
