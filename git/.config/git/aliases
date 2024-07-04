@@ -22,4 +22,3 @@
     ca = commit --amend
     main = "!f() { git checkout main || git checkout master; }; f"
     cbn = rev-parse --abbrev-ref HEAD
-  
