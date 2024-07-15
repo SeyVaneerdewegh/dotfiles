@@ -47,6 +47,10 @@ zinit snippet OMZP::aws
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::docker
+zinit snippet OMZP::ansible
+zinit snippet OMZP::azure
+
 ## Load completions
 autoload -Uz compinit && compinit
 
@@ -66,7 +70,7 @@ if type "fzf" > /dev/null; then
   zstyle ':fzf-tab:complete:*' fzf-preview 'ls --color $realpath'
   zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 fi
-## zouide - easy directory navigation
+## zoxide - easy directory navigation
 type "zoxide" > /dev/null && eval "$(zoxide init --cmd cd zsh)"
 ## Activate (available) plugins
 type "thefuck" > /dev/null && eval "$(thefuck --alias)"
