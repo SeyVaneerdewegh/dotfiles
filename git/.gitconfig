@@ -21,6 +21,9 @@
 [column]
 	ui = never
 
+[init]
+    defaultBranch = main
+
 [branch]
 	sort = -committerdate
 
@@ -46,5 +49,3 @@
 
 [includeIf "gitdir:~/Projects/Personal/"]
 	path = ~/Projects/Personal/.gitconfig
-[init]
-	defaultBranch = main
