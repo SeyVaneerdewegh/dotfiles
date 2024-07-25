@@ -49,3 +49,9 @@
 
 [includeIf "gitdir:~/Projects/Personal/"]
 	path = ~/Projects/Personal/.gitconfig
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
