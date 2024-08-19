@@ -197,6 +197,10 @@ if.app-id="com.microsoft.teams2"
 run="move-node-to-workspace O"
 
 [[on-window-detected]]
+if.app-id="com.spotify.client"
+run="move-node-to-workspace M"
+
+[[on-window-detected]]
 check-further-callbacks = true
 run="move-node-to-workspace 1"
 
