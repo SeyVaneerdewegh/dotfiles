@@ -1,7 +1,4 @@
 
-# Place a copy of this config to ~/.aerospace.toml
-# After that, you can edit ~/.aerospace.toml to your liking
-
 # You can use it to add commands that run after login to macOS user session.
 # 'start-at-login' needs to be 'true' for 'after-login-command' to work
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
@@ -58,6 +55,8 @@ outer.bottom =     10
 outer.top =        10
 outer.right =      10
 
+
+#--------------------------------------------------------------------------------------------- Main --
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
@@ -155,7 +154,9 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
+#--------------------------------------------------------------------------------------------- Main END --
 
+#--------------------------------------------------------------------------------------------- Service --
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -171,7 +172,9 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+#--------------------------------------------------------------------------------------------- Service END --
 
+#--------------------------------------------------------------------------------------------- Window config --
 [[on-window-detected]]
 if.app-id="org.alacritty"
 run="move-node-to-workspace T"
@@ -217,3 +220,4 @@ run="move-node-to-workspace 1"
 B = ['secondary', 'main']
 I = ['secondary', 'main']
 T = ['secondary', 'main']
+#--------------------------------------------------------------------------------------------- Window config END --
