@@ -2,7 +2,7 @@
 
 # Docker config
 export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
-export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+# export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
 
 # Go config
 if type "go" > /dev/null; then
