@@ -42,3 +42,4 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Editor
 alias vim="nvim"
 alias ls="ls --color"
+alias ll="ls -al --color"
