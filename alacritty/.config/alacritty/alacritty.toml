@@ -1,6 +1,3 @@
-import = [
-    "~/.config/alacritty/catppuccin-mocha.toml"
-]
 
 [bell]
 animation = "EaseOutExpo"
@@ -30,7 +27,7 @@ mouse = "Middle"
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [window]
@@ -48,3 +45,10 @@ bindings = [
     { key = "Right", mods = "Alt", chars = "\u001BF" },
     { key = "Left",  mods = "Alt", chars = "\u001BB" },
 ]
+
+[general]
+import = [
+    "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[terminal]
