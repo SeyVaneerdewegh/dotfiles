@@ -45,3 +45,5 @@ alias ls="ls --color"
 alias ll="ls -al --color"
 
 alias acli="arduino-cli --log-level debug"
+
+alias unlock-alacritty="xattr -rd com.apple.quarantine /Applications/Alacritty.app"
