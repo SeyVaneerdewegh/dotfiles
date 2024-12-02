@@ -1,57 +1,57 @@
 [user]
-	name = Sey Vaneerdewegh
+    name = Sey Vaneerdewegh
 
 [color]
-	ui = true
+    ui = true
 
 [push]
-	default = simple
+    default = simple
 
 [core]
-	editor = vim
-	filemode = false
-	autocrlf = input
+    editor = vim
+    filemode = false
+    autocrlf = input
 
 [pull]
-	rebase = true
+    rebase = true
 
 [rerere]
-	enabled = true
+    enabled = true
 
 [column]
-	ui = never
+    ui = never
 
 [init]
     defaultBranch = main
 
 [branch]
-	sort = -committerdate
+    sort = -committerdate
 
 [advice]
-	skippedCherryPicks = false
+    skippedCherryPicks = false
 
 [commit]
-	template = ~/.config/git/commitmessage
+    template = ~/.config/git/commitmessage
 
 [include]
-	path = ~/.config/git/aliases
-	path = ~/.config/git/filters
+    path = ~/.config/git/aliases
+    path = ~/.config/git/filters
 
 [includeIf "gitdir:~/"]
     path = ~/.gitprivate
 
 [includeIf "gitdir:~/Projects/"]
-	path = ~/Projects/.gitconfig
+    path = ~/Projects/.gitconfig
 
 [includeIf "gitdir:~/Projects/Trendminer/"]
-	path = ~/Projects/Trendminer/.gitconfig
-	path = ~/Projects/Trendminer/.goprivate
+    path = ~/Projects/Trendminer/.gitconfig
+    path = ~/Projects/Trendminer/.goprivate
 
 [includeIf "gitdir:~/Projects/Personal/"]
-	path = ~/Projects/Personal/.gitconfig
+    path = ~/Projects/Personal/.gitconfig
 [credential "https://github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
+    helper = 
+    helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
+    helper = 
+    helper = !/opt/homebrew/bin/gh auth git-credential
