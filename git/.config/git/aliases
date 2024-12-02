@@ -8,7 +8,7 @@
     sapply = "!f() { git stash apply stash^{/$*}; }; f"
     bclean    = "!f() { for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done; }; f"
     #bcleanall = "!f() { for branch in $(git branch | egrep -v '(^\*|main|master)' | awk '{print $1}'); do git branch -d $branch; done; }; f"
-    b = branch
+    b = branch -vv
     root = !pwd
     push-origin = push origin
     po = push origin
@@ -22,3 +22,5 @@
     ca = commit --amend
     main = "!f() { git checkout main || git checkout master; }; f"
     cbn = rev-parse --abbrev-ref HEAD
+	drop-last = !git reset --hard HEAD~1
+	drop-last-soft = !git reset --soft HEAD~1
