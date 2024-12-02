@@ -204,6 +204,10 @@ if.app-id="com.spotify.client"
 run="move-node-to-workspace M"
 
 [[on-window-detected]]
+if.app-id="md.obsidian"
+run="move-node-to-workspace N"
+
+[[on-window-detected]]
 check-further-callbacks = true
 run="move-node-to-workspace 1"
 
